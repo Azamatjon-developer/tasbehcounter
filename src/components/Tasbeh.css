@@ -1,0 +1,107 @@
+/* Tasbeh.css */
+
+.tasbeh-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #f0f8ff, #e0f7fa);
+  padding: 20px;
+}
+
+.tasbeh-title {
+  font-size: 2.5rem;
+  color: #004d40;
+  margin-bottom: 10px;
+}
+
+.tasbeh-count {
+  font-size: 6rem;
+  color: #00695c;
+  margin: 20px 0;
+}
+
+.tasbeh-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.tasbeh-buttons button {
+  font-size: 2rem;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #009688;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+.tasbeh-buttons button:hover {
+  background-color: #00796b;
+}
+
+.tasbeh-buttons button:nth-child(2) {
+  background-color: #ff9800;
+}
+
+.tasbeh-buttons button:nth-child(2):hover {
+  background-color: #f57c00;
+}
+
+.tasbeh-buttons button:nth-child(3) {
+  background-color: #f44336;
+}
+
+.tasbeh-buttons button:nth-child(3):hover {
+  background-color: #582fd3;
+}
+
+
+.tasbeh-image-wrapper {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.tasbeh-image {
+  width: 390px;
+  height: auto;
+  display: block;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.tasbeh-count-on-image {
+  position: absolute;
+  top: 27%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  pointer-events: none; /* tugmalarni bosishda xalaqit qilmaydi */
+}
+
+
+
+
+/* Responsive */
+@media (max-width: 600px) {
+  .tasbeh-count {
+    font-size: 4rem;
+  }
+
+  .tasbeh-buttons button {
+    font-size: 1.5rem;
+    padding: 8px 16px;
+  }
+
+  .tasbeh-title {
+    font-size: 2rem;
+  }
+}
